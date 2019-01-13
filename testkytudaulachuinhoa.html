@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra ky tu dau co phai la chu in hoa hay khong</title>
+</head>
+<body>
+<script>
+    function checkInHoa(str) {
+        regexp = /^[A-Z]/;
+        if(regexp.test(str)){
+            console.log("String's first character is uppercase");
+        }else {
+            console.log("String's first character is not uppercase");
+        }
+    }
+    checkInHoa('tran van tuan');
+    checkInHoa('Tran van tuan');
+    checkInHoa('tran Van Tuan');
+</script>
+</body>
+</html>
